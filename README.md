@@ -24,7 +24,7 @@ The only official sources are:
   <img src="https://raw.githubusercontent.com/NZMacros/GitHub/main/skibi_defense_macro/img_assets/icons/sdm_logo_darktheme.svg"> <!-- dark theme (light text) -->
 </picture>
 <br>
-(credits to @ender4byss on Discord for the logo design!)<br>
+(credits to @ender4byss on Discord for the logo design!)<br><br>
 
 <!-- shields -->
 [![][latest-release-shield]][latest-release-link]
