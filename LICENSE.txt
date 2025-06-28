@@ -1,16 +1,23 @@
-MIT License
+MIT License (Modified) 
 
 Copyright (c) 2025 NegativeZero
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+to use, copy, modify, merge, publish, distribute, sublicense, and/or specifically with limitation to sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+If the Software or any substantial portion thereof is used in a commercial product or service that generates revenue, the original author (NegativeZero) shall be entitled to a share of that revenue based on the extent of modifications:
+70% if the commercial version includes minor changes (less than 25% of the codebase altered),
+60% for moderate changes (25% to 75% of the codebase),
+or only 50% for substantial modifications (more than 75% changed or replaced).
+
+Revenue must be calculated on gross income related to the use or distribution of the Software and paid quarterly, unless otherwise agreed in writing with the original author.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
