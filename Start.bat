@@ -1,10 +1,10 @@
 :: start macro
 @echo off
 setlocal enabledelayedexpansion
-chcp 65001 > nul
+chcp 65001 :: > nul
 cd %~dp0
 
-:: Echo colours
+:: echo colours
 set "grey=[90m"
 set "red=[91m"
 set "green=[92m"
@@ -13,28 +13,35 @@ set "blue=[94m"
 set "magenta=[95m"
 set "cyan=[96m"
 set "white=[97m"
+set "reset=[0m"
 
 set "repo_link=https://github.com/NegativeZero01/SkibiDefenseMacro-v2"
 
 
 :: if script and executable exist, run the macro
-if exist "macros\sdm-v2.ahk" (
-	if exist "ahk\AutoHotkey364.exe" (
+if not exist "macros\sdm-v2.ahk" (
+	set "sdm-missing=1"
+)
+if not exist "ahk\AutoHotkey64.exe" (
+	set "exe-missing=1"
+)
+if not defined sdm-missing (
+	if not defined exe-missing (
 		start "" "%~dp0ahk\AutoHotkey64.exe" "%~dp0macros\sdm-v2.ahk" %*
 		exit
-	) else (set "exe-missing=1")
-) else (set "sdm-missing=1")
+	)
+)
 
 :: missing files
 if "%exe-missing%" == "1" (
-	echo %red%Failed to find the "AutoHotkey64" (or AutoHotkey64.exe) file in the "ahk" folder^^!
+	echo %red%Failed to find the "AutoHotkey64" ^(or AutoHotkey64.exe^) file in the "ahk" folder^^!
 	echo This is most likely due to a third-party antivirus deleting the file, or a corrupted .zip file. Try following these steps to fix the issue:
-	echo 1. Re-install the macro from the official GitHub (%repo_link%) and check that "AutoHotkey64.exe" exists in the submacros folder
+	echo 1. Re-install the macro from the official GitHub ^(%repo_link%^) and check that "AutoHotkey64.exe" exists in the submacros folder
 	echo 2. Disable any third-party antivirus software ^(or add the Skibi Defense Macro folder as an exception^)
-	echo 3. Run Start (or Start.bat)
+	echo 3. Run Start ^(or Start.bat^)
 	echo.
-	echo Note: Both Skibi Defense Macro and AutoHotkey are safe and should work fine with Microsoft Defender.%reset%^>
-	echo Join the Discord server for support: discord.gg/Nfn6czrzbv/%reset%
+	echo Note: Both Skibi Defense Macro and AutoHotkey are safe and should work fine with Microsoft Defender.%reset%
+	echo Join the Discord server for support: discord.gg/Nfn6czrzbv%reset%
 	echo.
 	<nul set /p "=%grey%Press any key to exit . . . %reset%"
 		pause >nul
@@ -44,12 +51,12 @@ if "%exe-missing%" == "1" (
 if "%sdm-missing%" == "1" (
 	echo %red%Failed to find the "sdm-v2.ahk" file in the "macros" folder^^!
 	echo This is most likely due to a third-party antivirus deleting the file, or a corrupted .zip file. Try following these steps to fix the issue:
-	echo 1. Re-install the macro from the official GitHub (%repo_link%) and check that "sdm-v2.ahk" exists in the submacros folder
+	echo 1. Re-install the macro from the official GitHub ^(%repo_link%^) and check that "sdm-v2.ahk" exists in the submacros folder
 	echo 2. Disable any third-party antivirus software ^(or add the Skibi Defense Macro folder as an exception^)
-	echo 3. Run Start (or Start.bat)
+	echo 3. Run Start ^(or Start.bat^)
 	echo.
-	echo Note: Both Skibi Defense Macro and AutoHotkey are safe and should work fine with Microsoft Defender.%reset%^>
-	echo Join the Discord server for support: discord.gg/Nfn6czrzbv/%reset%
+	echo Note: Both Skibi Defense Macro and AutoHotkey are safe and should work fine with Microsoft Defender.%reset%
+	echo %blue%Join the Discord server for support: discord.gg/Nfn6czrzbv/%reset%
 	echo.
 	<nul set /p "=%grey%Press any key to exit . . . %reset%"
 		pause >nul
