@@ -7,7 +7,7 @@
  |_____/ |_|\_\|_||_.__/ |_| |_____/  \___||_|  \___||_| |_||___/ \___| |_|  |_| \__,_| \___||_|   \___/                                                  
 
 Thanks for downloading Skibi Defense Macro!
-To start the macro, run "Start.bat" and allow it to run if prompted by Windows Defender/Smartscreen.
+To start the macro, run "Start" (aka Start.bat) and allow it to run if prompted by Windows Defender/Smartscreen.
 
 IMPORTANT:
 Make sure you are only downloading from an official source!
